@@ -9,15 +9,24 @@ import SwiftUI
 
 struct SignUpView: View {
 
+    @State private var username = ""
     @State private var email = ""
     @State private var password = ""
     
     var body: some View {
-        VStack{
-            HStack{Spacer()}
+        VStack(alignment: .leading){
+            HStack{
+                Spacer()
+            }
+            
+            Text("Log In")
+                .font(.largeTitle)
+                .bold()
+                .foregroundColor(.white)
+                
             Spacer()
             
-            CustomTextField(text: $email, title: "Username", icon: "person")
+            CustomTextField(text: $username, title: "Username", icon: "person")
             CustomTextField(text: $email, title: "Email Adress", icon: "envelope")
             CustomTextField(text: $password, title: "Password", icon: "key.horizontal")
             
@@ -28,8 +37,8 @@ struct SignUpView: View {
             }label: {
                 Text("Sign Up")
                     .bold()
+                    .frame(width: UIScreen.main.bounds.width - 60)
                     .padding()
-                    .padding(.horizontal,100)
                     .foregroundColor(.white)
                     .background(.black)
                     .clipShape(RoundedRectangle(cornerRadius: 15))

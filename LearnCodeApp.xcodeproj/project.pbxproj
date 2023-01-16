@@ -15,6 +15,10 @@
 		45578FF72975CDAF007F428E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45578FF62975CDAF007F428E /* LoginView.swift */; };
 		45578FF92975CDF6007F428E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45578FF82975CDF6007F428E /* CustomTextField.swift */; };
 		45578FFC2975D248007F428E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45578FFB2975D248007F428E /* SignUpView.swift */; };
+		455790002975D72A007F428E /* TabViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45578FFF2975D72A007F428E /* TabViewScreen.swift */; };
+		455790092975D77C007F428E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455790082975D77C007F428E /* HomeView.swift */; };
+		4557900B2975D787007F428E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557900A2975D787007F428E /* SearchView.swift */; };
+		4557900D2975D78F007F428E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557900C2975D78F007F428E /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		45578FF62975CDAF007F428E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		45578FF82975CDF6007F428E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		45578FFB2975D248007F428E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		45578FFF2975D72A007F428E /* TabViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewScreen.swift; sourceTree = "<group>"; };
+		455790082975D77C007F428E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4557900A2975D787007F428E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		4557900C2975D78F007F428E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +91,12 @@
 		45578FED2975C6C4007F428E /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				45578FFA2975D23E007F428E /* SignUp */,
+				455790032975D75D007F428E /* ProfileView */,
+				455790022975D755007F428E /* SearchView */,
+				455790012975D73A007F428E /* HomeView */,
+				45578FFE2975D720007F428E /* TabView */,
 				45578FF32975C731007F428E /* Components */,
+				45578FFA2975D23E007F428E /* SignUp */,
 				45578FF12975C723007F428E /* Login */,
 				45578FF02975C711007F428E /* Greeting */,
 			);
@@ -135,6 +147,38 @@
 				45578FFB2975D248007F428E /* SignUpView.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		45578FFE2975D720007F428E /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				45578FFF2975D72A007F428E /* TabViewScreen.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		455790012975D73A007F428E /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				455790082975D77C007F428E /* HomeView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		455790022975D755007F428E /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				4557900A2975D787007F428E /* SearchView.swift */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		455790032975D75D007F428E /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				4557900C2975D78F007F428E /* ProfileView.swift */,
+			);
+			path = ProfileView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,9 +252,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				45578FE12975C622007F428E /* ContentView.swift in Sources */,
+				4557900B2975D787007F428E /* SearchView.swift in Sources */,
+				4557900D2975D78F007F428E /* ProfileView.swift in Sources */,
 				45578FF52975CD81007F428E /* GreetingView.swift in Sources */,
 				45578FF72975CDAF007F428E /* LoginView.swift in Sources */,
 				45578FDF2975C622007F428E /* LearnCodeAppApp.swift in Sources */,
+				455790002975D72A007F428E /* TabViewScreen.swift in Sources */,
+				455790092975D77C007F428E /* HomeView.swift in Sources */,
 				45578FFC2975D248007F428E /* SignUpView.swift in Sources */,
 				45578FF92975CDF6007F428E /* CustomTextField.swift in Sources */,
 			);
