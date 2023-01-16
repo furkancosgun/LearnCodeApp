@@ -52,6 +52,9 @@
 		45578FDD2975C622007F428E /* LearnCodeApp */ = {
 			isa = PBXGroup;
 			children = (
+				45578FEF2975C708007F428E /* Service */,
+				45578FEE2975C701007F428E /* Model */,
+				45578FED2975C6C4007F428E /* Core */,
 				45578FDE2975C622007F428E /* LearnCodeAppApp.swift */,
 				45578FE02975C622007F428E /* ContentView.swift */,
 				45578FE22975C623007F428E /* Assets.xcassets */,
@@ -67,6 +70,59 @@
 				45578FE62975C623007F428E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		45578FED2975C6C4007F428E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				45578FF32975C731007F428E /* Components */,
+				45578FF22975C729007F428E /* Register */,
+				45578FF12975C723007F428E /* Login */,
+				45578FF02975C711007F428E /* Greeting */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		45578FEE2975C701007F428E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45578FEF2975C708007F428E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		45578FF02975C711007F428E /* Greeting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Greeting;
+			sourceTree = "<group>";
+		};
+		45578FF12975C723007F428E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		45578FF22975C729007F428E /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		45578FF32975C731007F428E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
