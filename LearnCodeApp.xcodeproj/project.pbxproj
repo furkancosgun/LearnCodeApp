@@ -11,6 +11,10 @@
 		45578FE12975C622007F428E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45578FE02975C622007F428E /* ContentView.swift */; };
 		45578FE32975C623007F428E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45578FE22975C623007F428E /* Assets.xcassets */; };
 		45578FE72975C623007F428E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45578FE62975C623007F428E /* Preview Assets.xcassets */; };
+		45578FF52975CD81007F428E /* GreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45578FF42975CD81007F428E /* GreetingView.swift */; };
+		45578FF72975CDAF007F428E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45578FF62975CDAF007F428E /* LoginView.swift */; };
+		45578FF92975CDF6007F428E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45578FF82975CDF6007F428E /* CustomTextField.swift */; };
+		45578FFC2975D248007F428E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45578FFB2975D248007F428E /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		45578FE22975C623007F428E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45578FE42975C623007F428E /* LearnCodeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LearnCodeApp.entitlements; sourceTree = "<group>"; };
 		45578FE62975C623007F428E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		45578FF42975CD81007F428E /* GreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingView.swift; sourceTree = "<group>"; };
+		45578FF62975CDAF007F428E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		45578FF82975CDF6007F428E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		45578FFB2975D248007F428E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +83,8 @@
 		45578FED2975C6C4007F428E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				45578FFA2975D23E007F428E /* SignUp */,
 				45578FF32975C731007F428E /* Components */,
-				45578FF22975C729007F428E /* Register */,
 				45578FF12975C723007F428E /* Login */,
 				45578FF02975C711007F428E /* Greeting */,
 			);
@@ -100,6 +108,7 @@
 		45578FF02975C711007F428E /* Greeting */ = {
 			isa = PBXGroup;
 			children = (
+				45578FF42975CD81007F428E /* GreetingView.swift */,
 			);
 			path = Greeting;
 			sourceTree = "<group>";
@@ -107,22 +116,25 @@
 		45578FF12975C723007F428E /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				45578FF62975CDAF007F428E /* LoginView.swift */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		45578FF22975C729007F428E /* Register */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Register;
 			sourceTree = "<group>";
 		};
 		45578FF32975C731007F428E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				45578FF82975CDF6007F428E /* CustomTextField.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		45578FFA2975D23E007F428E /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				45578FFB2975D248007F428E /* SignUpView.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +208,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				45578FE12975C622007F428E /* ContentView.swift in Sources */,
+				45578FF52975CD81007F428E /* GreetingView.swift in Sources */,
+				45578FF72975CDAF007F428E /* LoginView.swift in Sources */,
 				45578FDF2975C622007F428E /* LearnCodeAppApp.swift in Sources */,
+				45578FFC2975D248007F428E /* SignUpView.swift in Sources */,
+				45578FF92975CDF6007F428E /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
