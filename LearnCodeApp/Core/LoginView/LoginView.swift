@@ -8,25 +8,33 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var email = ""
+    @State private var username = ""
     @State private var password = ""
+    @EnvironmentObject var model : UserViewModel
+        
     var body: some View {
         VStack{
             HStack{Spacer()}
+            
+            Text("Sign Up")
+                .font(.largeTitle)
+                .bold()
+                .foregroundColor(.white)
+            
             Spacer()
             
-            CustomTextField(text: $email, title: "Email Adress", icon: "envelope")
+            CustomTextField(text: $username, title: "Username", icon: "person")
             CustomTextField(text: $password, title: "Password", icon: "key.horizontal")
             
             Spacer()
             
             Button{
-            
+                model.loginUser(username: username, password: password)
             }label: {
                 Text("Log In")
                     .bold()
                     .padding()
-                    .padding(.horizontal,100)
+                    .padding(.horizontal,UIScreen.main.bounds.width / 4)
                     .foregroundColor(.white)
                     .background(.black)
                     .clipShape(RoundedRectangle(cornerRadius: 15))
