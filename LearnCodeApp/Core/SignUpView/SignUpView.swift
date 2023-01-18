@@ -12,14 +12,14 @@ struct SignUpView: View {
     @State private var username = ""
     @State private var email = ""
     @State private var password = ""
-    
+    @EnvironmentObject var model : UserViewModel
     var body: some View {
-        VStack(alignment: .leading){
+        VStack{
             HStack{
                 Spacer()
             }
             
-            Text("Log In")
+            Text("Sign Up")
                 .font(.largeTitle)
                 .bold()
                 .foregroundColor(.white)
@@ -33,12 +33,12 @@ struct SignUpView: View {
             Spacer()
             
             Button{
-            
+                model.register(username:username,email: email, password: password)
             }label: {
                 Text("Sign Up")
                     .bold()
-                    .frame(width: UIScreen.main.bounds.width - 60)
                     .padding()
+                    .padding(.horizontal,UIScreen.main.bounds.width / 4)
                     .foregroundColor(.white)
                     .background(.black)
                     .clipShape(RoundedRectangle(cornerRadius: 15))
