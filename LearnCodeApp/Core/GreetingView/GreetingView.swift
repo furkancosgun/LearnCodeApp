@@ -29,8 +29,9 @@ struct GreetingView: View {
             Spacer()
             
             HStack(spacing: 30){
-                Button {
-                    
+                
+                NavigationLink {
+                    SignUpView()
                 } label: {
                     Text("Sign Up")
                         .padding(.horizontal)
@@ -41,8 +42,8 @@ struct GreetingView: View {
                 .foregroundColor(.black)
                 .clipShape(RoundedRectangle(cornerRadius: 15))
 
-                Button {
-                    
+                NavigationLink {
+                    LoginView()
                 } label: {
                     Text("Log In")
                         .padding(.horizontal)
