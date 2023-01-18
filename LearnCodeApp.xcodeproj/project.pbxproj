@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		450C38A129785B9700B0D852 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450C38A029785B9700B0D852 /* User.swift */; };
+		450C38A429785C1200B0D852 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450C38A329785C1200B0D852 /* UserViewModel.swift */; };
+		450C38A729785CD800B0D852 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450C38A629785CD800B0D852 /* AuthService.swift */; };
+		450C38AA29785D7C00B0D852 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 450C38A929785D7C00B0D852 /* Alamofire */; };
 		450E0D0429771B550074DA11 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E0D0329771B550074DA11 /* Lesson.swift */; };
 		45578FDF2975C622007F428E /* LearnCodeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45578FDE2975C622007F428E /* LearnCodeAppApp.swift */; };
 		45578FE12975C622007F428E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45578FE02975C622007F428E /* ContentView.swift */; };
@@ -27,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		450C38A029785B9700B0D852 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		450C38A329785C1200B0D852 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		450C38A629785CD800B0D852 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		450E0D0329771B550074DA11 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		45578FDB2975C622007F428E /* LearnCodeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnCodeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45578FDE2975C622007F428E /* LearnCodeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnCodeAppApp.swift; sourceTree = "<group>"; };
@@ -53,12 +60,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				459624422977265400D896DC /* CodeEditor in Frameworks */,
+				450C38AA29785D7C00B0D852 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		450C38A229785C0300B0D852 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				450C38A329785C1200B0D852 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		450E0D0229771A8D0074DA11 /* LearnView */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +102,7 @@
 		45578FDD2975C622007F428E /* LearnCodeApp */ = {
 			isa = PBXGroup;
 			children = (
+				450C38A229785C0300B0D852 /* ViewModel */,
 				45578FEF2975C708007F428E /* Service */,
 				45578FEE2975C701007F428E /* Model */,
 				45578FED2975C6C4007F428E /* Core */,
@@ -116,9 +133,9 @@
 				455790022975D755007F428E /* SearchView */,
 				455790012975D73A007F428E /* HomeView */,
 				45578FFE2975D720007F428E /* TabView */,
-				45578FFA2975D23E007F428E /* SignUp */,
-				45578FF12975C723007F428E /* Login */,
-				45578FF02975C711007F428E /* Greeting */,
+				45578FFA2975D23E007F428E /* SignUpView */,
+				45578FF12975C723007F428E /* LoginView */,
+				45578FF02975C711007F428E /* GreetingView */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -127,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				450E0D0329771B550074DA11 /* Lesson.swift */,
+				450C38A029785B9700B0D852 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -134,24 +152,25 @@
 		45578FEF2975C708007F428E /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				450C38A629785CD800B0D852 /* AuthService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
 		};
-		45578FF02975C711007F428E /* Greeting */ = {
+		45578FF02975C711007F428E /* GreetingView */ = {
 			isa = PBXGroup;
 			children = (
 				45578FF42975CD81007F428E /* GreetingView.swift */,
 			);
-			path = Greeting;
+			path = GreetingView;
 			sourceTree = "<group>";
 		};
-		45578FF12975C723007F428E /* Login */ = {
+		45578FF12975C723007F428E /* LoginView */ = {
 			isa = PBXGroup;
 			children = (
 				45578FF62975CDAF007F428E /* LoginView.swift */,
 			);
-			path = Login;
+			path = LoginView;
 			sourceTree = "<group>";
 		};
 		45578FF32975C731007F428E /* Components */ = {
@@ -163,12 +182,12 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		45578FFA2975D23E007F428E /* SignUp */ = {
+		45578FFA2975D23E007F428E /* SignUpView */ = {
 			isa = PBXGroup;
 			children = (
 				45578FFB2975D248007F428E /* SignUpView.swift */,
 			);
-			path = SignUp;
+			path = SignUpView;
 			sourceTree = "<group>";
 		};
 		45578FFE2975D720007F428E /* TabView */ = {
@@ -229,6 +248,7 @@
 			name = LearnCodeApp;
 			packageProductDependencies = (
 				459624412977265400D896DC /* CodeEditor */,
+				450C38A929785D7C00B0D852 /* Alamofire */,
 			);
 			productName = LearnCodeApp;
 			productReference = 45578FDB2975C622007F428E /* LearnCodeApp.app */;
@@ -261,6 +281,7 @@
 			packageReferences = (
 				4596243A2977246F00D896DC /* XCRemoteSwiftPackageReference "CodeEditorView" */,
 				459624402977265400D896DC /* XCRemoteSwiftPackageReference "CodeEditor" */,
+				450C38A829785D7C00B0D852 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 45578FDC2975C622007F428E /* Products */;
 			projectDirPath = "";
@@ -296,10 +317,13 @@
 				45578FF72975CDAF007F428E /* LoginView.swift in Sources */,
 				45578FDF2975C622007F428E /* LearnCodeAppApp.swift in Sources */,
 				455790002975D72A007F428E /* TabViewScreen.swift in Sources */,
+				450C38A129785B9700B0D852 /* User.swift in Sources */,
+				450C38A429785C1200B0D852 /* UserViewModel.swift in Sources */,
 				455790092975D77C007F428E /* HomeView.swift in Sources */,
 				45578FFC2975D248007F428E /* SignUpView.swift in Sources */,
 				45962439297721A600D896DC /* LearnView.swift in Sources */,
 				4557900F2975DC9F007F428E /* CardView.swift in Sources */,
+				450C38A729785CD800B0D852 /* AuthService.swift in Sources */,
 				4596243F2977248700D896DC /* CodeEditorView.swift in Sources */,
 				45578FF92975CDF6007F428E /* CustomTextField.swift in Sources */,
 			);
@@ -517,6 +541,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		450C38A829785D7C00B0D852 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		4596243A2977246F00D896DC /* XCRemoteSwiftPackageReference "CodeEditorView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mchakravarty/CodeEditorView.git";
@@ -536,6 +568,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		450C38A929785D7C00B0D852 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 450C38A829785D7C00B0D852 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		459624412977265400D896DC /* CodeEditor */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 459624402977265400D896DC /* XCRemoteSwiftPackageReference "CodeEditor" */;
