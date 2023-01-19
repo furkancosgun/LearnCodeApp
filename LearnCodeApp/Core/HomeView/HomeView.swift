@@ -23,7 +23,13 @@ struct HomeView: View {
                 ScrollView(.horizontal){
                     HStack{
                         ForEach(0...colors.count - 1,id:\.self){ index in
-                            CardView(course: pythonLessons[index], headColor: colors[index])
+                            
+                            NavigationLink{
+                                LearnView(lesson: pythonLessons[index])
+                            }label: {
+                                CardView(course: pythonLessons[index], headColor: colors[index])
+                                    .foregroundColor(.black)
+                            }
                         }
                     }
                 }
@@ -35,7 +41,13 @@ struct HomeView: View {
                 ScrollView(.horizontal){
                     HStack{
                         ForEach(0...colors.count - 1,id:\.self){ index in
-                            CardView(course: javaScriptLessons[index], headColor: colors[index])
+                            NavigationLink{
+                                LearnView(lesson: javaScriptLessons[index])
+                            }label: {
+                                CardView(course: javaScriptLessons[index], headColor: colors[index])
+                                    .foregroundColor(.black)
+                            }
+                           
                         }
                     }
                 }
@@ -100,7 +112,7 @@ Yaygın Veri Türleri
 Python'da yazdığımız şeylerin(verilerin) örneğin bir yazı gibi yada bir sayı gibi, türleri vardır. Bunlardan en yaygın 3 tanesi string, integer ve floattır.
 
 String, bizlerin '(tek tırnak) yada "(çift tırnak) içine sarmaladığımız şeylerdir.
-
+ 
 Örnek:
 "Oğuzhan", 'oğuzhan', '5' = String
 
