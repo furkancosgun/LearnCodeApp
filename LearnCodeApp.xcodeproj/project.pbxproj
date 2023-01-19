@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		450669152979AE8D004431D6 /* CodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450669142979AE8D004431D6 /* CodeService.swift */; };
+		450669172979AFB9004431D6 /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450669162979AFB9004431D6 /* Code.swift */; };
+		450669192979AFF3004431D6 /* CodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450669182979AFF3004431D6 /* CodeViewModel.swift */; };
 		450C38A129785B9700B0D852 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450C38A029785B9700B0D852 /* User.swift */; };
 		450C38A429785C1200B0D852 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450C38A329785C1200B0D852 /* UserViewModel.swift */; };
 		450C38A729785CD800B0D852 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450C38A629785CD800B0D852 /* AuthService.swift */; };
@@ -20,10 +23,7 @@
 		45578FF72975CDAF007F428E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45578FF62975CDAF007F428E /* LoginView.swift */; };
 		45578FF92975CDF6007F428E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45578FF82975CDF6007F428E /* CustomTextField.swift */; };
 		45578FFC2975D248007F428E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45578FFB2975D248007F428E /* SignUpView.swift */; };
-		455790002975D72A007F428E /* TabViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45578FFF2975D72A007F428E /* TabViewScreen.swift */; };
 		455790092975D77C007F428E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455790082975D77C007F428E /* HomeView.swift */; };
-		4557900B2975D787007F428E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557900A2975D787007F428E /* SearchView.swift */; };
-		4557900D2975D78F007F428E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557900C2975D78F007F428E /* ProfileView.swift */; };
 		4557900F2975DC9F007F428E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557900E2975DC9F007F428E /* CardView.swift */; };
 		45962439297721A600D896DC /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45962438297721A600D896DC /* LearnView.swift */; };
 		4596243F2977248700D896DC /* CodeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4596243E2977248700D896DC /* CodeEditorView.swift */; };
@@ -31,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		450669142979AE8D004431D6 /* CodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeService.swift; sourceTree = "<group>"; };
+		450669162979AFB9004431D6 /* Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
+		450669182979AFF3004431D6 /* CodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewModel.swift; sourceTree = "<group>"; };
 		450C38A029785B9700B0D852 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		450C38A329785C1200B0D852 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		450C38A629785CD800B0D852 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -45,10 +48,7 @@
 		45578FF62975CDAF007F428E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		45578FF82975CDF6007F428E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		45578FFB2975D248007F428E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		45578FFF2975D72A007F428E /* TabViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewScreen.swift; sourceTree = "<group>"; };
 		455790082975D77C007F428E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		4557900A2975D787007F428E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		4557900C2975D78F007F428E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4557900E2975DC9F007F428E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		45962438297721A600D896DC /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
 		4596243E2977248700D896DC /* CodeEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeEditorView.swift; sourceTree = "<group>"; };
@@ -71,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				450C38A329785C1200B0D852 /* UserViewModel.swift */,
+				450669182979AFF3004431D6 /* CodeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -129,10 +130,7 @@
 				4596243D2977247600D896DC /* CodeEditorView */,
 				450E0D0229771A8D0074DA11 /* LearnView */,
 				45578FF32975C731007F428E /* Components */,
-				455790032975D75D007F428E /* ProfileView */,
-				455790022975D755007F428E /* SearchView */,
 				455790012975D73A007F428E /* HomeView */,
-				45578FFE2975D720007F428E /* TabView */,
 				45578FFA2975D23E007F428E /* SignUpView */,
 				45578FF12975C723007F428E /* LoginView */,
 				45578FF02975C711007F428E /* GreetingView */,
@@ -145,6 +143,7 @@
 			children = (
 				450E0D0329771B550074DA11 /* Lesson.swift */,
 				450C38A029785B9700B0D852 /* User.swift */,
+				450669162979AFB9004431D6 /* Code.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				450C38A629785CD800B0D852 /* AuthService.swift */,
+				450669142979AE8D004431D6 /* CodeService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -190,36 +190,12 @@
 			path = SignUpView;
 			sourceTree = "<group>";
 		};
-		45578FFE2975D720007F428E /* TabView */ = {
-			isa = PBXGroup;
-			children = (
-				45578FFF2975D72A007F428E /* TabViewScreen.swift */,
-			);
-			path = TabView;
-			sourceTree = "<group>";
-		};
 		455790012975D73A007F428E /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
 				455790082975D77C007F428E /* HomeView.swift */,
 			);
 			path = HomeView;
-			sourceTree = "<group>";
-		};
-		455790022975D755007F428E /* SearchView */ = {
-			isa = PBXGroup;
-			children = (
-				4557900A2975D787007F428E /* SearchView.swift */,
-			);
-			path = SearchView;
-			sourceTree = "<group>";
-		};
-		455790032975D75D007F428E /* ProfileView */ = {
-			isa = PBXGroup;
-			children = (
-				4557900C2975D78F007F428E /* ProfileView.swift */,
-			);
-			path = ProfileView;
 			sourceTree = "<group>";
 		};
 		4596243D2977247600D896DC /* CodeEditorView */ = {
@@ -310,16 +286,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				45578FE12975C622007F428E /* ContentView.swift in Sources */,
-				4557900B2975D787007F428E /* SearchView.swift in Sources */,
-				4557900D2975D78F007F428E /* ProfileView.swift in Sources */,
+				450669172979AFB9004431D6 /* Code.swift in Sources */,
 				450E0D0429771B550074DA11 /* Lesson.swift in Sources */,
 				45578FF52975CD81007F428E /* GreetingView.swift in Sources */,
 				45578FF72975CDAF007F428E /* LoginView.swift in Sources */,
+				450669152979AE8D004431D6 /* CodeService.swift in Sources */,
 				45578FDF2975C622007F428E /* LearnCodeAppApp.swift in Sources */,
-				455790002975D72A007F428E /* TabViewScreen.swift in Sources */,
 				450C38A129785B9700B0D852 /* User.swift in Sources */,
 				450C38A429785C1200B0D852 /* UserViewModel.swift in Sources */,
 				455790092975D77C007F428E /* HomeView.swift in Sources */,
+				450669192979AFF3004431D6 /* CodeViewModel.swift in Sources */,
 				45578FFC2975D248007F428E /* SignUpView.swift in Sources */,
 				45962439297721A600D896DC /* LearnView.swift in Sources */,
 				4557900F2975DC9F007F428E /* CardView.swift in Sources */,
