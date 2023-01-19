@@ -26,9 +26,9 @@ struct SignUpView: View {
                 
             Spacer()
             
-            CustomTextField(text: $username, title: "Username", icon: "person")
-            CustomTextField(text: $email, title: "Email Adress", icon: "envelope")
-            CustomTextField(text: $password, title: "Password", icon: "key.horizontal")
+            CustomTextField(text: $username, title: "Username", icon: "person",isSecure: false)
+            CustomTextField(text: $email, title: "Email Adress", icon: "envelope",isSecure: false)
+            CustomTextField(text: $password, title: "Password", icon: "key.horizontal",isSecure: true)
             
             Spacer()
             
