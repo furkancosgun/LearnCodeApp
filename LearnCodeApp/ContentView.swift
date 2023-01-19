@@ -13,7 +13,7 @@ struct ContentView: View {
         NavigationView{
             Group{
                 if model.user.id != 0 {
-                    TabViewScreen()
+                    HomeView()
                 }else{
                     GreetingView()
                 }
